@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Skin"
+    tools:context=".CvDetails">
+
+    <EditText
+        android:id="@+id/etBio"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="104dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWork"
+        tools:text="BIo" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="92dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etSlackName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name" />
+
+    <EditText
+        android:id="@+id/etGithub"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        app:layout_constraintEnd_toEndOf="@+id/etWork"
+        app:layout_constraintTop_toBottomOf="@+id/etSlackName"
+        tools:text="github lin" />
+
+    <EditText
+        android:id="@+id/etSlackName"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etGithub"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        tools:text="Slack name" />
+
+    <EditText
+        android:id="@+id/etWork"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etBio"
+        app:layout_constraintTop_toBottomOf="@+id/etGithub"
+        tools:text="Work experience" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBio"
+        app:layout_constraintVertical_bias="0.714" />
+</androidx.constraintlayout.widget.ConstraintLayout>
